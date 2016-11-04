@@ -26,4 +26,8 @@ fi
 sensors | grep "Physical id 0:" | awk '{print "physical.value " $4}'
 sensors | grep "Core 0:" | awk '{print "core0.value " $3}'
 sensors | grep "Core 1:" | awk '{print "core1.value " $3}'
+
+# for hddtemp add this line to /etc/sudoers (without #)
+#nobody ALL=(ALL) NOPASSWD: /usr/sbin/hddtemp
+
 sudo hddtemp /dev/sda | awk '{print "hdd.value " $4}'
