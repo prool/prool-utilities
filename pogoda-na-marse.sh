@@ -17,7 +17,6 @@ if [ "$1" = "config" ]; then
     echo 'core0.label core 0 temperature'
     echo 'core1.label core 1 temperature'
     echo 'hdd.label HDD temperature'
-#    echo 'pogoda.draw AREASTACK'
     exit 0
 fi
 
