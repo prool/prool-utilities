@@ -21,8 +21,6 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-# date >> ~prool/pogoda-na-marse.log
-
 sensors | grep "Physical id 0:" | awk '{print "physical.value " $4}'
 sensors | grep "Core 0:" | awk '{print "core0.value " $3}'
 sensors | grep "Core 1:" | awk '{print "core1.value " $3}'
