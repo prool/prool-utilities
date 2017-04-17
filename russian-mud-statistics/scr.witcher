@@ -1,0 +1,11 @@
+#proolwatchdogtimer 300
+#action {zMUD} {3}
+#action {созданного} {пруль}
+#action {Введите пароль} {mypasswd}
+#action {НАЖМИТЕ ВВОД} { }
+#action {Войти в Мир} {1}
+#action {МАД ШКОЛУ} {кто}
+#action {Пересоединение} {кто}
+#action {Максимальное количество} {#zap;#zap}
+#sess s0 game.mudlast.ru 2700
+3

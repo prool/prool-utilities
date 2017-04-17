@@ -1,0 +1,15 @@
+#proolwatchdogtimer 300
+
+#action {Charset} {0}
+#action {Вы новичок} {пруликс}
+#action {Пароль:} {mypasswd}
+#action {для создания нового} {пруликс}
+#action {НАЖМИТЕ ENTER} { }
+#action {Начать игру} {1}
+#action {номер страницы} {2}
+#action {Вых} {кто}
+#action {С момента перезагрузки} {#zap;#zap}
+
+#sess s0 mud.a-mud.ru 4000
+#prool
+пруликс

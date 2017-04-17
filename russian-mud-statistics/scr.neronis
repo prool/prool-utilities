@@ -1,0 +1,11 @@
+#proolwatchdogtimer 300
+#action {Заходите еще} {#zap;#zap}
+#action {с перезагрузки} {конец}
+#action {Выходы} {кто}
+#action {для продолжения} { }
+#action {Введите пароль} {mypasswd}
+#action {Твое имя} {пруликс}
+#action {KOI8} {1}
+#action {28hp} {who}
+#sess s0 neronis.ru 9000
+z

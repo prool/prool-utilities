@@ -1,0 +1,10 @@
+#proolwatchdogtimer 300
+#action {please} {0}
+#action {ENTER} {i}
+#action {Зауч} {who}
+#action {Всего} {конец}
+#action {желает} {0;#zap;#zap}
+#action {нового} {боженька mypasswd}
+#action {Листать} {2}
+#sess s0 mud.kharkov.org 3333
+fuck

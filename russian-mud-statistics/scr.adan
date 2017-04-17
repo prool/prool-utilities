@@ -1,0 +1,12 @@
+#proolwatchdogtimer 300
+#action {Пароль:} {mypasswd}
+#action {Translit} {0}
+#action {своего аккаунта} {пруликс}
+#action {имя персонажа} {пруль}
+#action {ENTER} { }
+#action {Начать игру} {1}
+#action {Ваш IP-адрес} {кто}
+#action {в игре находилось} {#zap;#zap}
+#sess s0 adan.ru 4000
+#prool
+fuck

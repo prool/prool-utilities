@@ -1,0 +1,10 @@
+#proolwatchdogtimer 300
+#action {KOI} {3}
+#action {нового} {пруль}
+#action {Пароль} {mypasswd}
+#action {Поменять пароль} {1}
+#action {Милая девушка} {кто}
+#action {закончить показ} {i}
+#action {момента перезагрузки} {постой;#zap;#zap}
+#sess s0 sowmud.ru 5555
+fuck

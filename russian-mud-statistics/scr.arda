@@ -1,0 +1,12 @@
+#proolwatchdogtimer 300
+#action {Пароль:} {mypasswd}
+#action {игрок} {save;quit}
+#action {Arda раскрыла} {who}
+#action {ВВОД} { }
+#action {Last connected} { }
+#action {NEW} {prool}
+#action {translit} {2}
+#action {покинул Арду} {#zap;#zap}
+#sess s0 79.98.143.118 4000
+fuck
+

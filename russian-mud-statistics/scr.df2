@@ -1,0 +1,10 @@
+#proolwatchdogtimer 300
+#action {Пароль} {mypasswd}
+#action {translit} {1}
+#action {каким именем} {prool}
+#action {tnl} {who}
+#action {Всего игроков} {i;quit}
+#action {U.N.S.} {#zap;#zap}
+#sess s0 mud.df2.ru 4000
+#prool
+fuck
