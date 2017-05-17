@@ -3,11 +3,9 @@ while true
 do
 date
 
-./byl.sh
+#./byl.sh
 
 # ./sow.sh
-
-./df2.sh
 
 ./adan.sh
 
@@ -16,6 +14,8 @@ date
 ./witcher.sh
 
 ./rmud.sh
+
+./df2.sh
 
 echo -----
 sleep 300

@@ -16,12 +16,12 @@ if [ "$1" = "config" ]; then
     echo 'graph_info Russian MUDs statistics'
     echo 'bald.label Balderdash MUD'
 #    echo 'bald.colour COLOUR7'
-    echo 'c7i.label C7I'
+#    echo 'c7i.label C7I'
     echo 'king.label KingLion'
     echo 'hiervard.label Hiervard'
 #    echo 'byl.label Byliny'
 #    echo 'sow.label SOW'
-    echo 'df2.label DF2'
+#    echo 'df2.label DF2'
     echo 'adan.label Adamant Adan'
     echo 'arda.label Arda MUD'
     echo 'witcher.label Witcher MUD'
@@ -32,12 +32,12 @@ if [ "$1" = "config" ]; then
 fi
 
 curl http://www.balderdash.ru/ 2>/dev/null | grep "64\." | awk '{print "bald.value " $2"0" }'
-curl http://live.c7i.ru/command.php?command=who 2>/dev/null | /usr/local/bin/filtr1
+# curl http://live.c7i.ru/command.php?command=who 2>/dev/null | /usr/local/bin/filtr1
 curl http://tlkrus.rusfur.net:8880/who 2>/dev/null | grep максимум | awk '{print "king.value " substr($1,8)+0}'
 curl http://hiervard.ru/info/stat/online.shtml 2>/dev/null | grep яЛЕПРМ | grep -v h5 | awk 'BEGIN {i=0} {i=$6+0} END {print "hiervard.value "i}'
 #cat /tmp/byl-stat.txt
 #cat /tmp/sowmud.txt
-cat /tmp/df2.txt
+# cat /tmp/df2.txt
 cat /tmp/adan.txt
 cat /tmp/vmudtest-ok.txt
 cat /tmp/arda.txt
