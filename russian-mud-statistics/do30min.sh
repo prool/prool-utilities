@@ -3,6 +3,8 @@ while true
 do
 date
 
+./aladon.sh
+
 ./amud.sh
 
 ./sow.sh

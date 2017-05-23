@@ -1,11 +1,12 @@
 #proolwatchdogtimer 300
-#action {создания нового} {пруликс}
-#action {Пароль} {mypasswd}
+#action {создания нового} {имяпеорсонажа}
+#action {Пароль} {парольперсонажа}
 #action {НАЖМИТЕ ВВОД} { }
 #action {Войти в игру} {1}
 #action {Добро пожаловать} {кто}
 #action {Воссоединяемся} {кто}
 #action {обновить} { }
+#action {ввод=дальше} { }
 #action {смертны} {конец}
 #action {Вы выбросили} {#zap;#zap}
 #action {KOI8-R} {k}

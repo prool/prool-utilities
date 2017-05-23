@@ -28,6 +28,7 @@ if [ "$1" = "config" ]; then
     echo 'rmud.label RMUD'
     echo 'neronis.label Neronis'
     echo 'amud.label AMUD'
+    echo 'aladon.label Aladon'
     exit 0
 fi
 
@@ -45,4 +46,5 @@ cat /tmp/witcher.txt
 cat /tmp/rmud.txt
 cat /tmp/neronis.txt
 cat /tmp/amud.txt
+cat /tmp/aladon.txt
 echo
