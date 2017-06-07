@@ -5,6 +5,7 @@
 #action {Всего} {конец}
 #action {желает} {0;#zap;#zap}
 #action {banned} {#zap;#zap}
+#action {Игра временно приостановлена} {#zap;#zap}
 #action {нового} {ровольд mypasswd}
 #action {Листать} { }
 #sess s0 bylins.su 4000
