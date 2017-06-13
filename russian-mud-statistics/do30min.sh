@@ -25,6 +25,13 @@ date
 
 ./byl.sh
 
-echo sleep 30 min!
-sleep 1800
+echo !------Sleep 30 min----------!
+i=30
+	while [ `expr $i` -ne 0 ]
+	do
+	sleep 60
+	echo -n "*"
+	i=`expr $i - 1`
+	done
+echo " "
 done
