@@ -24,6 +24,7 @@ date
 # ./vmudtest.sh
 
 ./byl.sh
+./byl5555.sh
 
 echo !------Sleep 30 min----------!
 i=30
