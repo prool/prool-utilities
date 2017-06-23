@@ -18,5 +18,5 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-cat /tmp/df2.txt
+cat /tmp2/df2.txt
 echo
