@@ -33,12 +33,11 @@ if [ "$1" = "config" ]; then
 fi
 
 echo -n `date` " " >> /tmp2/mudstat.log1
-curl http://www.balderdash.ru/ 2>/dev/null | grep "64\." | awk '{print "bald.value " $2"0" }' | tee -a /tmp2/mudstat.log1
-# curl http://live.c7i.ru/command.php?command=who 2>/dev/null | /usr/local/bin/filtr1
+curl --connect-timeout 120 http://www.balderdash.ru/ 2>/dev/null | grep "64\." | awk '{print "bald.value " $2"0" }' | tee -a /tmp2/mudstat.log1
 echo -n `date` " " >> /tmp2/mudstat.log1
-curl http://tlkrus.rusfur.net:8880/who 2>/dev/null | grep максимум | awk '{print "king.value " substr($1,8)+0}' | tee -a /tmp2/mudstat.log1
+curl --connect-timeout 120 http://tlkrus.rusfur.net:8880/who 2>/dev/null | grep максимум | awk '{print "king.value " substr($1,8)+0}' | tee -a /tmp2/mudstat.log1
 echo -n `date` " " >> /tmp2/mudstat.log1
-curl http://hiervard.ru/info/stat/online.shtml 2>/dev/null | grep яЛЕПРМ | grep -v h5 | awk 'BEGIN {i=0} {i=$6+0} END {print "hiervard.value "i}' | tee -a /tmp2/mudstat.log1
+curl --connect-timeout 120 http://hiervard.ru/info/stat/online.shtml 2>/dev/null | grep яЛЕПРМ | grep -v h5 | awk 'BEGIN {i=0} {i=$6+0} END {print "hiervard.value "i}' | tee -a /tmp2/mudstat.log1
 cat /tmp2/adan.txt
 cat /tmp2/arda.txt
 cat /tmp2/witcher.txt
