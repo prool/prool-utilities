@@ -4,27 +4,21 @@ do
 date
 
 ./aladon.sh
-
 ./amud.sh
-
 ./sow.sh
-
 ./neronis.sh
-
 ./adan.sh
-
 ./arda.sh
-
 ./witcher.sh
-
 ./rmud.sh
-
 ./df2.sh
 
 # ./vmudtest.sh
 
 ./byl.sh
 ./byl5555.sh
+
+./makewww.sh
 
 echo !------Sleep 30 min----------!
 i=30
