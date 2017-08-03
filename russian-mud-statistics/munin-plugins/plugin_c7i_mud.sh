@@ -19,5 +19,5 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-curl http://live.c7i.ru/command.php?command=who 2>/dev/null | /usr/local/bin/filtr1
+curl --connect-timeout 120 http://live.c7i.ru/command.php?command=who 2>/dev/null | /usr/local/bin/filtr1
 echo
