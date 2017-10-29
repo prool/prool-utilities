@@ -19,6 +19,6 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-cat /tmp/byl-stat.txt
-cat /tmp/sowmud.txt
+cat /tmp2/byl-stat.txt
+cat /tmp2/sowmud.txt
 echo
