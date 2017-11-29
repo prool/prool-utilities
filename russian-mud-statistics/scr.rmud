@@ -1,15 +1,12 @@
 #proolwatchdogtimer 300
-#action {создания нового} {имяпеорсонажа}
+#action {создания нового} {имяперсонажа}
 #action {Пароль} {парольперсонажа}
 #action {НАЖМИТЕ ВВОД} { }
 #action {Войти в игру} {1}
-#action {Добро пожаловать} {кто}
-#action {Воссоединяемся} {кто}
-#action {обновить} { }
-#action {ввод=дальше} { }
-#action {смертны} {конец}
+#action {Добро пожаловать} {who}
+#action {Воссоединяемся} {who}
+#action {страница} { }
+#action { смертны} {quit}
 #action {Вы выбросили} {#zap;#zap}
 #action {KOI8-R} {k}
 #sess s0 rmud.ru 3040
-k
-
