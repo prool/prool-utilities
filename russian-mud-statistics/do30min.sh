@@ -28,5 +28,8 @@ i=30
 	echo -n "*"
 	i=`expr $i - 1`
 	done
+
+rm prooltin.log
+
 echo " "
 done
