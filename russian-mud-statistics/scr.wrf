@@ -1,0 +1,9 @@
+#totaloff
+#proolwatchdogtimer 300
+#sess s0 wrf.crossalt.ru 4000
+
+#action {Unix} {1}
+#action {Введите имя} {пруль}
+#action {Введите пароль} {пароль}
+#action {mana} {см;кто;см}
+#action {Всего игроков} {#delay {1} {конец;#zap;#zap}}

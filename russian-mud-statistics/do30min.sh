@@ -3,6 +3,7 @@ while true
 do
 date
 
+./dream.sh
 ./aladon.sh
 ./amud.sh
 ./sow.sh
@@ -12,6 +13,8 @@ date
 ./witcher.sh
 ./rmud.sh
 ./df2.sh
+./fdung.sh
+./wrf.sh
 
 # ./vmudtest.sh
 
@@ -19,6 +22,8 @@ date
 ./byl5555.sh
 
 ./makewww.sh
+
+rm /tmp/prooltin.log
 
 echo !------Sleep 30 min----------!
 i=30
@@ -28,8 +33,5 @@ i=30
 	echo -n "*"
 	i=`expr $i - 1`
 	done
-
-rm prooltin.log
-
 echo " "
 done

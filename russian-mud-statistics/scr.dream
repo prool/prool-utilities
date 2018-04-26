@@ -1,0 +1,9 @@
+#totaloff
+#proolwatchdogtimer 300
+#action {Russian codepage} {1}
+#action {Как твое имя} {prool}
+#action {пароль} {password}
+#action {Архивариус переносит} {who}
+#action {Всего игроков} {quit}
+#action {нибудь заканчивается} {#zap;#zap}
+#sess s1 dreamland.rocks 9000

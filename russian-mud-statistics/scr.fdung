@@ -1,0 +1,10 @@
+#totaloff
+#proolwatchdogtimer 300
+#sess s0 home.saboteur.com.ua 4001
+#action {Select your codepage} {1}
+#action {, странник:} {prool}
+#action {Пароль:} {password}
+#action {[Нажми ENTER длЯ продолжениЯ]} { }
+#action {Initial version Rom24b4a} {who}
+#action {Всего игроков} {quit}
+#action {Все хорошее рано или поздно заканчиваетс} {#zap;#zap}
