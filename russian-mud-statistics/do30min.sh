@@ -23,7 +23,7 @@ date
 
 ./makewww.sh
 
-rm /tmp/prooltin.log
+rm -f /tmp/prooltin.log > /dev/null
 
 echo !------Sleep 30 min----------!
 i=30
