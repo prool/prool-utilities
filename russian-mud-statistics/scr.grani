@@ -1,0 +1,11 @@
+#totaloff
+#proolwatchdogtimer 300
+#action {Select your charset} {0}
+#action {Введите имя} {пруль}
+#action {Ваш пароль} {password}
+#action {ажмите ENTER} { }
+#action {Начать игру} {1}
+#action {Добро пожаловать в МПМ} {кто}
+#action {Вы восстановили соединение} {кто}
+#action {Максимальное кол-во} {#zap;#zap}
+#sess grani 142.93.100.142 4000
