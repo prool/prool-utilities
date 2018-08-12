@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # plugin for munin
-# get statistics C7I MUD
+# get statistics C7I MUD v.2 (bot)
 # by prool
 # <proolix@gmail.com>
 # www.prool.kharkov.org    mud.kharkov.org
@@ -9,7 +9,7 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title Russian MUD statistics. C7I MUD'
+    echo 'graph_title C7I MUD'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
     echo 'graph_category MUD'
@@ -20,4 +20,5 @@ if [ "$1" = "config" ]; then
 fi
 
 curl --connect-timeout 120 http://live.c7i.ru/command.php?command=who 2>/dev/null | /usr/local/bin/filtr1
+#cat /tmp2/c7i.lst
 echo

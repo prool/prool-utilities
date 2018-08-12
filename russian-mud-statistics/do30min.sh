@@ -3,6 +3,8 @@ while true
 do
 date
 
+./grani.sh
+# ./c7i.sh
 ./dream.sh
 ./aladon.sh
 ./amud.sh
