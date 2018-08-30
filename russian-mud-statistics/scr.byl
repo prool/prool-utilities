@@ -1,12 +1,8 @@
+#totaloff
 #proolwatchdogtimer 300
-#action {please} {0}
-#action {ENTER} {i}
-#action {Зауч} {who}
-#action {Всего} {конец}
-#action {желает} {0;#zap;#zap}
+#action {please} {5}
+#action {п▓п╡п╣п╢п╦я┌п╣ п╦п╪я▐} {#zap;#zap}
 #action {banned} {#zap;#zap}
-#action {Игра временно приостановлена} {#zap;#zap}
-#action {нового} {ровольд mypasswd}
-#action {Листать} { }
+#action {FAILED TO CONNECT} {#zap;#zap}
 #sess s0 bylins.su 4000
 QUIT
