@@ -3,6 +3,9 @@ while true
 do
 date
 
+./c7i.sh
+./hiervard.sh
+
 ./grani.sh
 # ./c7i.sh
 ./dream.sh
@@ -24,6 +27,8 @@ date
 ./byl5555.sh
 
 ./makewww.sh
+
+./makepage.sh | sh
 
 rm -f /tmp/prooltin.log > /dev/null
 
