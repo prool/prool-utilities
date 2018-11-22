@@ -9,16 +9,17 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title C7I MUD'
+    echo 'graph_title C7I MUD. Graph ver. 0.2'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
     echo 'graph_category MUD'
-    echo 'graph_info Russian MUD statistics. C7i MUD'
+    echo 'graph_info C7i MUD. Graph ver. 0.2'
 #    echo 'c7i.colour COLOUR7'
     echo 'c7i.label C7I'
     exit 0
 fi
 
-curl --connect-timeout 120 http://live.c7i.ru/command.php?command=who 2>/dev/null | /usr/local/bin/filtr1
-#cat /tmp2/c7i.lst
+# date >> /tmp2/c7i.log
+
+cat /tmp2/c7i.txt
 echo

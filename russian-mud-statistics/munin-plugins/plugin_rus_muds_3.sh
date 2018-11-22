@@ -9,7 +9,7 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title Hierward MUD'
+    echo 'graph_title Hierward MUD. Graph. ver. 0.2'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
     echo 'graph_category MUD'
@@ -19,5 +19,5 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-curl --connect-timeout 120 http://hiervard.ru/info/stat/online.shtml 2>/dev/null | grep Смертн | grep -v h5 | awk 'BEGIN {i=0} {i=$6+0} END {print "hiervard.value "i}' | tee -a /tmp2/mudstat.log1
+cat /tmp2/hiervard.txt
 echo

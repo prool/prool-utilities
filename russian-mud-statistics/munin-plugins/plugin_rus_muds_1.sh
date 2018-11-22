@@ -18,5 +18,5 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-curl --connect-timeout 120 http://www.balderdash.ru/ 2>/dev/null | grep "64\." | awk '{print "bald.value " $2"0" }' | tee -a /tmp2/mudstat.log1
+cat /tmp2/balderdash.txt
 echo
