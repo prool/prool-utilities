@@ -9,7 +9,7 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title Hierward MUD. Graph. ver. 0.2'
+    echo 'graph_title Hierward MUD'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
     echo 'graph_category MUD'

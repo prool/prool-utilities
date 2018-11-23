@@ -9,16 +9,14 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title Byliny and Sphere of Worlds'
+    echo 'graph_title Byliny MUD'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
     echo 'graph_category MUD'
     echo 'graph_info Russian MUDs statistics'
     echo 'byl.label Byliny'
-    echo 'sow.label SOW'
     exit 0
 fi
 
 cat /tmp2/byl-stat.txt
-cat /tmp2/sowmud.txt
 echo
