@@ -32,7 +32,10 @@ cat /var/www/mud.kharkov.org/mudstat/vmud.html | grep "Total:" | awk '{print "vm
 cat /var/www/zerkalo.kharkov.org/who.html | grep "Total online:" | awk '{print "zerkalo.value " $6}' > /tmp2/zerkalo.txt
 ./makepage.sh | sh
 
+./makelogs.sh
+
 rm -f /tmp/prooltin.log > /dev/null
+rm -f prooltin.log > /dev/null
 
 echo !------Sleep 30 min----------!
 i=30
