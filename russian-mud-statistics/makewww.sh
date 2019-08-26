@@ -20,7 +20,8 @@ cat /tmp2/fdung.txt | awk '{print "Forgotten Dungeon " $2 "<br>"}' >> /var/www/m
 cat /tmp2/wrf.txt | awk '{print "World of Russian Fantasy " $2 "<br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /tmp2/grani.txt | awk '{print "Грани Мира " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /tmp2/dream.txt | awk '{print "DreamLand " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
+cat /tmp2/newz.txt | awk '{print "Новое Зеркало " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /var/www/mud.kharkov.org/mudstat/vmud.html | grep "Total:" | awk '{print "Виртустан мад " $5 " <br>"}' >>  /var/www/muds.kharkov.org/newfile
-cat /var/www/zerkalo.kharkov.org/who.html | grep "Total online:" | awk '{print "Зеркало мад " $6 " <br>"}' >>  /var/www/muds.kharkov.org/newfile
+# cat /var/www/zerkalo.kharkov.org/who.html | grep "Total online:" | awk '{print "Зеркало мад " $6 " <br>"}' >>  /var/www/muds.kharkov.org/newfile
 cat footer.html >>  /var/www/muds.kharkov.org/newfile
 cp /var/www/muds.kharkov.org/newfile /var/www/muds.kharkov.org/stat-b.html

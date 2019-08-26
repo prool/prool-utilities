@@ -1,2 +1,2 @@
-#/bin/sh
-curl http://live.c7i.ru/command.php?command=who 2>/dev/null | /usr/local/bin/filtr1 | awk '{print "c7i.value " 0+$2 }' | tee /tmp2/c7i.txt
+#!/bin/sh
+tt++ scr.c7 | grep "Всего" | awk '{i=0+substr($2,8); if (i>0) i=i-1; print "c7i.value " i}' | tee /tmp2/c7i.txt

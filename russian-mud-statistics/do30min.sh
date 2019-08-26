@@ -3,6 +3,7 @@ while true
 do
 date
 
+./bald.sh
 ./c7i.sh
 ./hiervard.sh
 
