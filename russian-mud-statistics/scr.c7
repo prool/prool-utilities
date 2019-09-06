@@ -1,0 +1,10 @@
+#totaloff
+#proolwatchdogtimer 300
+#sess s0 mud.c7i.ru 3000
+
+#action {UTF8} {10}
+#action {create} {prool}
+#action {Пароль} {PASSWORD}
+#action {Добро пожаловать} {who}
+#action {Повторное} {who}
+#action {Максимум игроков} {quit;#zap;#zap}

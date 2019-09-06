@@ -1,0 +1,12 @@
+#nototaloff
+#proolwatchdogtimer 300
+#action {codepage} {2}
+#action {Под каким именем ты здесь будешь} {пруликс}
+#action {Пароль:} {PASSWORD}
+#action {фамилия вашей мамы} {1}
+#action {для продолжения} { }
+#action {Добро пожаловать} {кто}
+#action {Переподключение} {кто}
+#action {В мире находится} {конец;#zap;#zap}
+#prool {Найдено} {см;конец;#zap;#zap}
+#sess s0 balderdash.ru 9000
