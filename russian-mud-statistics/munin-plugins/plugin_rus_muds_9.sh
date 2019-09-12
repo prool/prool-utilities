@@ -15,7 +15,7 @@ if [ "$1" = "config" ]; then
     echo 'graph_category MUD'
     echo 'graph_info Russian MUDs statistics'
     echo 'amud.label AMUD'
-    echo 'amud.draw AREA'
+#    echo 'amud.draw AREA'
     exit 0
 fi
 

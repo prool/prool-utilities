@@ -8,7 +8,6 @@ date
 ./hiervard.sh
 
 ./grani.sh
-# ./c7i.sh
 ./dream.sh
 ./aladon.sh
 ./amud.sh
@@ -30,10 +29,9 @@ date
 ./makewww.sh
 
 cat /var/www/mud.kharkov.org/mudstat/vmud.html | grep "Total:" | awk '{print "vmud.value " $5}' > /tmp2/vmud.txt
-cat /var/www/zerkalo.kharkov.org/who.html | grep "Total online:" | awk '{print "zerkalo.value " $6}' > /tmp2/zerkalo.txt
-./makepage.sh | sh
+# ./makepage.sh | sh
 
-./makelogs.sh
+# ./makelogs.sh
 
 rm -f /tmp/prooltin.log > /dev/null
 rm -f prooltin.log > /dev/null
