@@ -2,15 +2,19 @@
 while true
 do
 date
-
-./bald.sh
+echo netcat values 
+./amud-nc.sh
+./bald-nc.sh
+echo ---
+./shadow_realms.sh
+# ./bald.sh
 ./c7i.sh
 ./hiervard.sh
 
 ./grani.sh
-./dream.sh
+#./dream.sh
 ./aladon.sh
-./amud.sh
+# ./amud.sh
 ./sow.sh
 ./neronis.sh
 ./adan.sh

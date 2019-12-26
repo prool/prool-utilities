@@ -17,4 +17,4 @@ if [ "$1" = "config" ]; then
 				        exit 0
 				fi
 
-ps aux | grep bin/circle | grep -v "circle 4" | grep -v grep | awk '{i=0+$10; print "uptime.value " i}'
+ps aux | grep bin/circle | grep -v "circle " | grep -v grep | awk '{i=0+$10; print "uptime.value " i}'

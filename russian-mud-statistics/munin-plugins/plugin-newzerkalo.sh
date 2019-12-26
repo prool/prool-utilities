@@ -8,7 +8,7 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title New Zerkalo MUD http://newzerkalo.virtustan.tk'
+    echo 'graph_title New Zerkalo MUD http://mud.kharkov.org'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
     echo 'graph_category MUD'
