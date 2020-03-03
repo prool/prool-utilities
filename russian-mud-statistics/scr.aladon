@@ -1,9 +1,10 @@
+#totaloff
 #proolwatchdogtimer 300
 #action {You select} {1}
-#action {Твое имя} {имяперсонажа}
-#action {Пароль} {парольперсонажа}
+#action {Твое имя} {LOGIN}
+#action {Пароль} {PASSWORD}
 #action {Нажми Enter} { }
-#action {100mv} {who}
+#action {hp} {who}
 #action {Всего персонажей} {конец}
 #action {Ваш персонаж будет храниться} {#zap;#zap}
 #sess s0 aladon.sovintel.ru 9000

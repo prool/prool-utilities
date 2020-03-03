@@ -33,7 +33,8 @@ echo ---
 ./makewww.sh
 
 cat /var/www/mud.kharkov.org/mudstat/vmud.html | grep "Total:" | awk '{print "vmud.value " $5}' > /tmp2/vmud.txt
-# ./makepage.sh | sh
+
+./makepage.sh | sh
 
 # ./makelogs.sh
 

@@ -1,0 +1,12 @@
+#totaloff
+#proolwatchdogtimer 300
+#sess s0 mud.nnov.net 9000
+
+#action {codepage} {6}
+#action {to be known} {LOGIN}
+#action {Password} {PASSWORD}
+#action {Reconnecting} {who}
+#action {Welcome to} {who}
+#action {Kolicestvo} {quit}
+#action {Kartiny mira} {#zap;#zap
+}
