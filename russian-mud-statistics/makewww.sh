@@ -24,7 +24,7 @@ cat /tmp2/sr.txt | awk '{print "Shadow Realms " $2 " <br>"}' >> /var/www/muds.kh
 
 if grep "������" /var/www/newzerkalo/who.html > /dev/null
 then
-	echo "Новое Зеркало 0 <br>"
+	echo "Новое Зеркало 0 <br>" >> /var/www/muds.kharkov.org/newfile
 else
 echo "Новое Зеркало " >> /var/www/muds.kharkov.org/newfile
 cat /var/www/newzerkalo/who.html | grep -a "�����" | awk '{l=length($3); if (l==11) print $6; else print $4}' 2>/dev/null >> /var/www/muds.kharkov.org/newfile
