@@ -22,12 +22,12 @@ cat /tmp2/grani.txt | awk '{print "–ì—Ä–∞–Ω–∏ –ú–∏—Ä–∞ " $2 " <br>"}' >> /var/ww
 cat /tmp2/dream.txt | awk '{print "DreamLand " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /tmp2/sr.txt | awk '{print "Shadow Realms " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
 
-if grep "Ó…Àœ«œ" /var/www/newzerkalo/who.html > /dev/null
+if grep "Ó…Àœ«œ" /var/www/zerkalo.kharkov.org/who.html > /dev/null
 then
 	echo "–ù–æ–≤–æ–µ –ó–µ—Ä–∫–∞–ª–æ 0 <br>" >> /var/www/muds.kharkov.org/newfile
 else
 echo "–ù–æ–≤–æ–µ –ó–µ—Ä–∫–∞–ª–æ " >> /var/www/muds.kharkov.org/newfile
-cat /var/www/newzerkalo/who.html | grep -a "˜”≈«œ" | awk '{l=length($3); if (l==11) print $6; else print $4}' 2>/dev/null >> /var/www/muds.kharkov.org/newfile
+cat /var/www/zerkalo.kharkov.org/who.html | grep -a "˜”≈«œ" | awk '{l=length($3); if (l==11) print $6; else print $4}' 2>/dev/null >> /var/www/muds.kharkov.org/newfile
 echo "<br>" >> /var/www/muds.kharkov.org/newfile
 fi
 

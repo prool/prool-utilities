@@ -1,6 +1,6 @@
 2
-LOGIN
-PASSWORD
+пруликс
+паролл666
 1
 who
 who

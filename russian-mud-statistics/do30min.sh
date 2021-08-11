@@ -2,10 +2,10 @@
 while true
 do
 date
-echo netcat values 
+# echo netcat values 
 ./amud-nc.sh
 ./bald-nc.sh
-echo ---
+# echo ---
 ./shadow_realms.sh
 # ./bald.sh
 ./c7i.sh
