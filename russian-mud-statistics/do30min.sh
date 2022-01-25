@@ -3,6 +3,7 @@ while true
 do
 date
 # echo netcat values 
+./df2.sh
 ./amud-nc.sh
 ./bald-nc.sh
 # echo ---
@@ -21,7 +22,6 @@ date
 ./arda.sh
 ./witcher.sh
 ./rmud.sh
-./df2.sh
 ./fdung.sh
 ./wrf.sh
 

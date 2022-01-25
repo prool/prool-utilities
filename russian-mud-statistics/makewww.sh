@@ -16,20 +16,18 @@ cat /tmp2/amud2.txt | awk '{print "Адамант мад Мир Колец " $2 
 cat /tmp2/aladon.txt | awk '{print "Аладон " $2 "<br>"}' >>  /var/www/muds.kharkov.org/newfile
 cat /tmp2/c7i.txt | awk '{print "Берег Семи Воплощений " $2 "<br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /tmp2/df2.txt | awk '{print "Опасная фантазия " $2 "<br>"}' >>  /var/www/muds.kharkov.org/newfile
-cat /tmp2/fdung.txt | awk '{print "Forgotten Dungeon " $2 "<br>"}' >> /var/www/muds.kharkov.org/newfile
+
+
+if [ -s /tmp2/fdung.txt ]
+then cat /tmp2/fdung.txt | awk '{print "Forgotten Dungeon " $2 "<br>"}' >> /var/www/muds.kharkov.org/newfile
+else echo "Forgotten Dungeon не работает <br>" >> /var/www/muds.kharkov.org/newfile
+fi
+
 cat /tmp2/wrf.txt | awk '{print "World of Russian Fantasy " $2 "<br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /tmp2/grani.txt | awk '{print "Грани Мира " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /tmp2/dream.txt | awk '{print "DreamLand " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /tmp2/sr.txt | awk '{print "Shadow Realms " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
-
-if grep "������" /var/www/zerkalo.kharkov.org/who.html > /dev/null
-then
-	echo "Новое Зеркало 0 <br>" >> /var/www/muds.kharkov.org/newfile
-else
-echo "Новое Зеркало " >> /var/www/muds.kharkov.org/newfile
-cat /var/www/zerkalo.kharkov.org/who.html | grep -a "�����" | awk '{l=length($3); if (l==11) print $6; else print $4}' 2>/dev/null >> /var/www/muds.kharkov.org/newfile
-echo "<br>" >> /var/www/muds.kharkov.org/newfile
-fi
+cat /tmp2/newz.txt | awk '{print "Зеркало " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
 
 cat /var/www/mud.kharkov.org/mudstat/vmud.html | grep "Total:" | awk '{print "Виртустан мад " $5 " <br>"}' >>  /var/www/muds.kharkov.org/newfile
 cat footer.html >>  /var/www/muds.kharkov.org/newfile
