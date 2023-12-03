@@ -17,4 +17,4 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-curl --connect-timeout 120 https://subscribe.ru/catalog/comp.soft.av.ezheki 2>/dev/null | grep Count | awk '{i=0+substr($4,29)*1000; print "subscribers.value " i}'
+curl --connect-timeout 120 https://subscribe.ru/catalog/comp.soft.av.ezheki 2>/dev/null | grep -a Count | awk '{i=0+substr($4,29)*1000; print "subscribers.value " i}'

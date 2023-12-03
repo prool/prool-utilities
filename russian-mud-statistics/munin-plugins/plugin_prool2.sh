@@ -18,4 +18,4 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-cat /var/www/mud.kharkov.org/mudstat/vmud.html | grep "Total mobs" | awk '{print "mobs.value " $3}'
+cat /tmp2/vmud.html | grep "Total mobs" | awk '{print "mobs.value " $3}'

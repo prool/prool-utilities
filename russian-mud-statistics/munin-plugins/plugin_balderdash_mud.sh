@@ -33,7 +33,7 @@ cat /tmp2/arda.txt
 cat /tmp2/witcher.txt
 cat /tmp2/rmud.txt
 cat /tmp2/neronis.txt
-cat /tmp2/amud.txt
+cat /tmp2/amud2.txt
 cat /tmp2/aladon.txt
 cat /tmp2/balderdash.txt
 echo

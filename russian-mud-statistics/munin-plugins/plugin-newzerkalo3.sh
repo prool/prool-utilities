@@ -8,7 +8,7 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title New Zerkalo MUD mobs'
+    echo 'graph_title New Zerkalo MUD mobs, v.0.3'
     echo 'graph_vlabel mobs'
     echo 'graph_noscale true'
     echo 'graph_category MUD'
@@ -17,4 +17,4 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-cat /home/prool/MUD/lib/stat/who2.txt | grep -a "Mobs" | awk '{print "zmud-mobs.value " $2}'
+cat /tmp2/who2.lst | grep -a "Mobs" | awk '{print "zmud-mobs.value " $2}'

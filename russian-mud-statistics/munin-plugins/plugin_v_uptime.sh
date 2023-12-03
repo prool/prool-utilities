@@ -19,4 +19,4 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-cat /var/www/mud.kharkov.org/mudstat/vmud.html | grep "MUD server uptime" | awk '{print "vup.value " $4}'
+cat /tmp2/vmud.html | grep "MUD server uptime" | awk '{print "vup.value " $4}'

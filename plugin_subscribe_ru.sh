@@ -21,8 +21,8 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-curl --connect-timeout 120 https://subscribe.ru/catalog/inet.thoughts.newsofprool 2>/dev/null | grep Count | awk '{i=0+substr($4,29); print "subscribers.value " i}'
-curl --connect-timeout 120 https://subscribe.ru/catalog/inet.thoughts.proold/ 2>/dev/null | grep Count | awk '{print "s2.value " 0+substr($4,29)}'
-curl --connect-timeout 120 https://subscribe.ru/catalog/comp.soft.othos.proolix/ 2>/dev/null | grep Count | awk '{i=0+substr($4,29); print "s3.value " i}'
-curl --connect-timeout 120 https://subscribe.ru/catalog/lit.graph.perfomans 2>/dev/null | grep Count | awk '{i=0+substr($4,29); print "s4.value " i}'
-curl --connect-timeout 120 https://subscribe.ru/stat/economics.news.virtustan 2>/dev/null | grep Count | awk '{i=0+substr($4,29); print "s5.value " i}'
+curl --connect-timeout 120 https://subscribe.ru/catalog/inet.thoughts.newsofprool 2>/dev/null | grep -a Count | awk '{i=0+substr($4,29); print "subscribers.value " i}'
+curl --connect-timeout 120 https://subscribe.ru/catalog/inet.thoughts.proold/ 2>/dev/null | grep -a Count | awk '{print "s2.value " 0+substr($4,29)}'
+curl --connect-timeout 120 https://subscribe.ru/catalog/comp.soft.othos.proolix/ 2>/dev/null | grep -a Count | awk '{i=0+substr($4,29); print "s3.value " i}'
+curl --connect-timeout 120 https://subscribe.ru/catalog/lit.graph.perfomans 2>/dev/null | grep -a Count | awk '{i=0+substr($4,29); print "s4.value " i}'
+curl --connect-timeout 120 https://subscribe.ru/stat/economics.news.virtustan 2>/dev/null | grep -a Count | awk '{i=0+substr($4,29); print "s5.value " i}'

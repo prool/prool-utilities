@@ -9,7 +9,7 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title DreamLand MUD. stat v.0.2'
+    echo 'graph_title DreamLand MUD'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
     echo 'graph_category MUD'

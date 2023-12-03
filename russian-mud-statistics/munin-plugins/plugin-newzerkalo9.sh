@@ -8,7 +8,7 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title New Zerkalo MUD real time uptime, days'
+    echo 'graph_title New Zerkalo MUD real time uptime, days. v.0.3'
     echo 'graph_vlabel uptime'
     echo 'graph_noscale true'
     echo 'graph_category MUD'
@@ -17,4 +17,4 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-cat /home/prool/MUD/lib/stat/who2.txt | grep -a "uptime" | awk '{print "zmud-uptime.value " $4}'
+cat /tmp2/who2.lst | grep -a "uptime" | awk '{print "zmud-uptime.value " $4}'

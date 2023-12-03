@@ -27,8 +27,8 @@ cat /tmp2/wrf.txt | awk '{print "World of Russian Fantasy " $2 "<br>"}' >> /var/
 cat /tmp2/grani.txt | awk '{print "Грани Мира " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /tmp2/dream.txt | awk '{print "DreamLand " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /tmp2/sr.txt | awk '{print "Shadow Realms " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
-cat /tmp2/newz.txt | awk '{print "Зеркало " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
+cat /tmp2/newz.txt | grep players | awk '{i=0; i=i+$2; print "Зеркало " i " <br>"}' >> /var/www/muds.kharkov.org/newfile
 
-cat /var/www/mud.kharkov.org/mudstat/vmud.html | grep "Total:" | awk '{print "Виртустан мад " $5 " <br>"}' >>  /var/www/muds.kharkov.org/newfile
+cat /tmp2/wholist.html | grep "Total:" | awk '{print "Виртустан мад " $5 " <br>"}' >>  /var/www/muds.kharkov.org/newfile
 cat footer.html >>  /var/www/muds.kharkov.org/newfile
 cp /var/www/muds.kharkov.org/newfile /var/www/muds.kharkov.org/stat-b.html

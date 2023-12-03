@@ -8,7 +8,7 @@
 #
 
 if [ "$1" = "config" ]; then
-	    echo 'graph_title New Zerkalo MUD registered players'
+	    echo 'graph_title New Zerkalo MUD registered players, v.0.2'
 	        echo 'graph_vlabel players'
 		    echo 'graph_noscale true'
 		        echo 'graph_category MUD'
@@ -18,4 +18,4 @@ if [ "$1" = "config" ]; then
 				fi
 
 
-cat /home/prool/MUD/lib/plrs/players.lst | wc | awk '{print "players.value " $1}'
+cat /tmp2/players.lst | wc | awk '{print "players.value " $1}'

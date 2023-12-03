@@ -8,7 +8,7 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title Zerkalo MUD memory'
+    echo 'graph_title Zerkalo MUD memory, v.0.2'
     echo 'graph_vlabel bytes'
     echo 'graph_noscale true'
     echo 'graph_category MUD'
@@ -19,5 +19,5 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-ps aux | grep "bin/circle.zerkalo" | grep -v grep | awk '{print "vmem.value " $5}'
-ps aux | grep "bin/circle.zerkalo" | grep -v grep | awk '{print "rmem.value " $6}'
+ps aux | grep "bin/circle" | grep -v grep | awk '{print "vmem.value " $5}'
+ps aux | grep "bin/circle" | grep -v grep | awk '{print "rmem.value " $6}'

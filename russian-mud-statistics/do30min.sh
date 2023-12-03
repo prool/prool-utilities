@@ -3,6 +3,7 @@ while true
 do
 date
 # echo netcat values 
+### ./grani2.sh
 ./df2.sh
 ./amud-nc.sh
 ./bald-nc.sh
@@ -32,7 +33,7 @@ date
 
 ./makewww.sh
 
-cat /var/www/mud.kharkov.org/mudstat/vmud.html | grep "Total:" | awk '{print "vmud.value " $5}' > /tmp2/vmud.txt
+cat /tmp2/vmud.html | grep "Total:" | awk '{print "vmud.value " $5}' > /tmp2/vmud.txt
 
 ./makepage.sh
 
