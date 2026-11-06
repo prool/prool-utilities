@@ -9,14 +9,14 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title RMUD'
+    echo 'graph_title Old RMUD (rmud.org:3041)'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
     echo 'graph_category MUD'
-    echo 'graph_info Russian MUDs statistics'
-    echo 'rmud.label RMUD'
+    echo 'graph_info MUDs statistics'
+    echo 'rmud.label Old RMUD'
     exit 0
 fi
 
-cat /tmp2/rmud.txt
+cat /tmp2/rmudold.txt
 echo

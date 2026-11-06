@@ -17,4 +17,4 @@ if [ "$1" = "config" ]; then
     echo 'dream.label DreamLand'
     exit 0
 fi
-echo "dream.value " `curl -s https://dreamland.rocks/api/who | jq '.total'` | tee /tmp2/dream.txt
+echo "dream.value " `curl --connect-timeout 60 -s https://dreamland.rocks/api/who | jq '.total'` | tee /tmp2/dream.txt

@@ -8,19 +8,19 @@ date
 ./amud-nc.sh
 ./bald-nc.sh
 # echo ---
-./shadow_realms.sh
-# ./bald.sh
-./c7i.sh
 ./hiervard.sh
+./shadow_realms.sh
+#./bald.sh
+./c7i.sh
 
 ./grani.sh
 #./dream.sh
-./aladon.sh
+### ./aladon.sh # kod ne prihodit. /prool 6 oct 2025
 # ./amud.sh
 ./sow.sh
 ./neronis.sh
 ./adan.sh
-./arda.sh
+######### ./arda.sh
 ./witcher.sh
 ./rmud.sh
 ./fdung.sh
@@ -33,7 +33,7 @@ date
 
 ./makewww.sh
 
-cat /tmp2/vmud.html | grep "Total:" | awk '{print "vmud.value " $5}' > /tmp2/vmud.txt
+# cat /tmp2/vmud.html | grep "Total:" | awk '{print "vmud.value " $5}' > /tmp2/vmud.txt
 
 ./makepage.sh
 

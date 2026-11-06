@@ -12,7 +12,7 @@ if [ "$1" = "config" ]; then
     echo 'graph_title tbaMUD stat by netcat'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
-    echo 'graph_category MUD'
+    echo 'graph_category tbamud'
     echo 'graph_info MUD statistics'
     echo 'mud.label tbaMUD'
     exit 0

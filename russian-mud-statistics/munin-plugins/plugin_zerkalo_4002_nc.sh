@@ -18,4 +18,4 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-nc -w 5 mud.kharkov.org 4002 | grep -a Online | awk '{print "z4002.value " $2-1 }'
+nc -w 5 mud.kharkov.org 4002 | grep -a nline | awk '{print "z4002.value " $2 - 1}'

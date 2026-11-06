@@ -19,5 +19,5 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-cat /tmp2/amud.txt
+cat /tmp2/amud2.txt
 echo

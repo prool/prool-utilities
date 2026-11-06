@@ -8,7 +8,7 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title New Zerkalo players, by netcat utility'
+    echo 'graph_title Zerkalo players, by netcat utility'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
     echo 'graph_category MUD'

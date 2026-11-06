@@ -9,7 +9,7 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title Zerkalo 4000 MUD. Stat by netcat'
+    echo 'graph_title Zerkalo MUD. Port 4000'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
     echo 'graph_category MUD'
@@ -18,4 +18,4 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-nc -w 5 mud.kharkov.org 4000 | grep -a Online | awk '{print "z4000.value " $2-1 }'
+nc -w 5 mud.kharkov.org 4000 | grep -a Online | awk '{print "z4000.value " $2 }'

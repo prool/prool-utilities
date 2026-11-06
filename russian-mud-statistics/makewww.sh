@@ -6,8 +6,8 @@ echo "<br><br>" >>  /var/www/muds.kharkov.org/newfile
 cat /tmp2/byl-stat.txt | awk '{print "Былины " $2 "<br>"}' >>  /var/www/muds.kharkov.org/newfile
 cat /tmp2/sowmud.txt | awk '{print "Сфера Миров " $2 "<br>"}' >>  /var/www/muds.kharkov.org/newfile
 cat /tmp2/bald2.txt | awk '{i=0; i=0+$2; print "Балдердаш " i "<br>"}' >> /var/www/muds.kharkov.org/newfile
-cat /tmp2/hiervard.txt | awk '{print "Хьервард " $2 "<br>"}' >> /var/www/muds.kharkov.org/newfile
-cat /tmp2/arda.txt| awk '{print "Арда " $2 "<br>"}' >>  /var/www/muds.kharkov.org/newfile
+# cat /tmp2/hiervard.txt | awk '{print "Хьервард " $2 "<br>"}' >> /var/www/muds.kharkov.org/newfile
+#######    cat /tmp2/arda.txt| awk '{print "Арда " $2 "<br>"}' >>  /var/www/muds.kharkov.org/newfile
 cat /tmp2/witcher.txt| awk '{print "Ведьмак " $2 "<br>"}' >>  /var/www/muds.kharkov.org/newfile
 cat /tmp2/rmud.txt| awk '{print "Рмад Мир Трех Лун " $2 "<br>"}' >>  /var/www/muds.kharkov.org/newfile
 cat /tmp2/neronis.txt | awk '{print "Неронис " $2 "<br>"}' >>  /var/www/muds.kharkov.org/newfile
@@ -27,8 +27,8 @@ cat /tmp2/wrf.txt | awk '{print "World of Russian Fantasy " $2 "<br>"}' >> /var/
 cat /tmp2/grani.txt | awk '{print "Грани Мира " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /tmp2/dream.txt | awk '{print "DreamLand " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
 cat /tmp2/sr.txt | awk '{print "Shadow Realms " $2 " <br>"}' >> /var/www/muds.kharkov.org/newfile
-cat /tmp2/newz.txt | grep players | awk '{i=0; i=i+$2; print "Зеркало " i " <br>"}' >> /var/www/muds.kharkov.org/newfile
+# cat /tmp2/newz.txt | grep players | awk '{i=0; i=i+$2; print "Зеркало " i " <br>"}' >> /var/www/muds.kharkov.org/newfile
 
-cat /tmp2/wholist.html | grep "Total:" | awk '{print "Виртустан мад " $5 " <br>"}' >>  /var/www/muds.kharkov.org/newfile
+# cat /tmp2/wholist.html | grep "Total:" | awk '{print "Виртустан мад " $5 " <br>"}' >>  /var/www/muds.kharkov.org/newfile
 cat footer.html >>  /var/www/muds.kharkov.org/newfile
 cp /var/www/muds.kharkov.org/newfile /var/www/muds.kharkov.org/stat-b.html

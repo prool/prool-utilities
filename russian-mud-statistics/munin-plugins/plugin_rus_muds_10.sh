@@ -18,5 +18,6 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-cat /tmp2/aladon.txt
+#cat /tmp2/aladon.txt
+echo aladon.value -1
 echo

@@ -9,7 +9,7 @@
 #
 
 if [ "$1" = "config" ]; then
-    echo 'graph_title Virtustan MUD. Stat by netcat'
+	echo 'graph_title Virtustan MUD (VMUD). Stat by netcat'
     echo 'graph_vlabel players'
     echo 'graph_noscale true'
     echo 'graph_category MUD'
@@ -18,4 +18,4 @@ if [ "$1" = "config" ]; then
     exit 0
 fi
 
-nc -w 5 mud.kharkov.org 3000 | grep -a Online | awk '{print "vmud.value " $2-1 }'
+nc -w 5 mud.kharkov.org 3000 | grep -a Online | awk '{print "vmud.value " $2 }'

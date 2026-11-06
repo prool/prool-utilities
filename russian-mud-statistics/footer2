@@ -1,18 +1,6 @@
 <p>
-<a href="muds.html">Адреса всех русскоязычных мадов в формате "имя хоста - порт" (не в том порядке, в котором графики).
-Adresses of russian-language MUDs (host:port) </a>
-
+<a href="muds.html">Adresses of russian-language MUDs (host:port) </a>
 <p>
-Некоторые мады могут быть недоступны для моих ботов из-за всяких блокировок и атак, связанных
-с российско-украинской войной (армия РФ вероломно вторглась на территорию Украины). 
-<p>
-<a href="https://github.com/prool/prool-utilities/tree/master/russian-mud-statistics">Sources of statistics system. Исходники системы сбора статистики</a>
-<p>
-<hr>
-<p>
-<a href="mudhistory">История МПМ Былины</a>, взятая с <a href="https://github.com/elezhor/mudhistory">github</a>
-<p>
-<i><a href="http://prool.kharkov.org">Пруль</a></i>
-<!--bigmir was here-->
+<a href="https://github.com/prool/prool-utilities/tree/master/russian-mud-statistics">Sources of statistics system</a>
 </body>
 </html>
